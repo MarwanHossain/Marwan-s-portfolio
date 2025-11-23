@@ -381,6 +381,22 @@ form{
     cursor: pointer;
     background-color: #3b8df6;
 }
+
+/* footer section */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.25rem 0.75rem;
+    border-top: 1px solid #333;
+}
+.footer-link{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-decoration: none;
+    margin-left: 1rem;
+}
 /* container */
 /* keep the container itself in center */
 .container{
