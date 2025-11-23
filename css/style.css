@@ -332,6 +332,55 @@ progress::-webkit-progress-bar{
     text-align: justify;
     padding: 1rem;
 }
+
+/* Contact Section */
+.contact-container{
+    margin-top: 4rem;
+    min-height: 100vh;
+}
+.contact-info-container{
+    display: grid;
+    grid-template-columns:33% 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+margin-top: 2.5rem;
+}
+
+.contact-info-container a, .contact-info-container p {
+    text-decoration: none;
+    font-size: 18px;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 1rem;
+}
+.input-field{
+    background-color: transparent;
+    border: 2px solid #555;
+    border-radius: 2px;
+    width: 90%;
+    padding: 0.675rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.input-field:focus{
+    outline: none;
+}
+.contact-button{
+    border: 1px solid #3b8df6;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.contact-button:hover{
+    cursor: pointer;
+    background-color: #3b8df6;
+}
 /* container */
 /* keep the container itself in center */
 .container{
