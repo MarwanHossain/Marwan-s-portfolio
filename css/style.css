@@ -1,6 +1,7 @@
 *{
      font-family: "Roboto Mono", monospace;
      color: white;
+     scroll-behavior: smooth;
 }
 body{
     background-color: #222;
@@ -187,6 +188,8 @@ height: 2px;
 
 /* certification Section */
 .certifications-container{
+    padding: 6.5rem 1rem 0 1rem;
+    margin-top: 1rem;
     min-height: 100vh;
 }
 .certificates-sub-container{
@@ -409,6 +412,12 @@ form{
         max-width: 540px;
     }
 }
+@media (max-width: 576px){
+    .project-container{
+        display: block;
+    }
+}
+
 @media (min-width: 992px){
     .container{
         max-width: 960px;
@@ -419,6 +428,17 @@ form{
     .hero-right{
         width: 60%;
     }
+}
+@media (max-width: 992px){
+    .navbar{
+        background-color: rgba(34,34,34,1);
+    }
+.resume-sub-container,.resume-list, .certificates-sub-container,.skills-sub-container, .contact-info-container{
+    display: block;
+}
+.project-container{
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
 }
 @media (min-width: 1200px){
     .container{
