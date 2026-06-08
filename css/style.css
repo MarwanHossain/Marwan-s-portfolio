@@ -74,11 +74,22 @@ body{
     min-height: 100vh;
 }
 /* hero and resume image, certificate logo,project-img */
-.hero-image,
+.hero-image{
+     max-width: 100%;
+    height: auto;
+    
+    display: block;
+}
 .resume-img,.certificate-logo,.project-img{
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    display: block;
+}
+.resume-img1{
+     max-width: 80%;
+    height: auto;
+    margin-left: 2rem;
     display: block;
 }
 .title{
@@ -117,6 +128,7 @@ body{
     display: grid;
     grid-template-columns:repeat(2, minmax(0, 1fr)) ;
     align-items: center;
+    margin-top: 4rem;
 }
 .subtitle{
     font-size: 1.25rem;
@@ -322,6 +334,7 @@ progress::-webkit-progress-bar{
     background-color: #333;
 }
 .project-img{
+    
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
@@ -448,5 +461,31 @@ form{
 @media (min-width: 1400px){
     .container{
         max-width: 1320px;
+    }
+}
+
+/* LAter added */
+@media (max-width: 992px) {
+    .resume-left .resume-img {
+        display: none;
+    }
+
+    .resume-img1{
+        margin-top: 1rem;
+        margin-left: none;
+    }
+
+}
+
+.resume-img1{
+     max-width: 80%;
+    height: auto;
+    margin-left: 2rem;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .resume-left .resume-img {
+        display: none;
     }
 }
